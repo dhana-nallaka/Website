@@ -12,7 +12,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
         
         <!-- title of site -->
-        <title>Dhana Nallaka</title>
+        <title>Naga Durga Dhanalakshmi Nallaka</title>
 
         <!-- For favicon png -->
 		<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.ico"/>
@@ -32,6 +32,7 @@
 		
         <!--bootstrap.min.css-->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/blog.css"
 		
 		<!-- bootsnav -->
 		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
@@ -70,7 +71,7 @@
 			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
 			                    <i class="fa fa-bars"></i>
 			                </button>
-			                <a class="navbar-brand" href="index.html">Dhana Nallaka</a>
+			                <a class="navbar-brand" href="index.html">Naga Durga DhanaLakshmi Nallaka</a>
 			            </div><!--/.navbar-header-->
 			            <!-- End Header Navigation -->
 
@@ -102,12 +103,43 @@
 					<div class="col-md-12 text-center">
 						<div class="header-text">
 							<h2>hi <span>,</span> i am <br> Dhana <br> Nallaka <span>.</span>   </h2>
-							<p>Data Scientist and Data Enthusiast</p>
+							<p>
+                              <span id="dynamic-text">Data Engineer</span>
+                            </p>
 							<a target="_blank" href="https://www.linkedin.com/in/nnddhanalakshmi/" download>LinkedIn</a>
 						</div><!--/.header-text-->
 					</div><!--/.col-->
 				</div><!-- /.row-->
 			</div><!-- /.container-->
+
+			<!-- ---adding text for Data Engineer -->
+
+<script>
+  // Array of texts to display
+  const texts = ["Data Migration", "SQL Server","Microsoft Azure","Spark"];
+  let index = 0;
+
+  const dynamicText = document.getElementById("dynamic-text");
+
+  function changeText() {
+    // Fade out effect
+    dynamicText.style.opacity = 0;
+
+    setTimeout(() => {
+      // Change text
+      dynamicText.textContent = texts[index];
+      // Fade in
+      dynamicText.style.opacity = 1;
+
+      // Move to next text
+      index = (index + 1) % texts.length;
+    }, 500); // Half second fade
+  }
+
+  // Change text every 3 seconds
+  setInterval(changeText, 3000);
+</script>
+
 
 		</section><!--/.welcome-hero-->
 		<!--welcome-hero end -->
@@ -118,21 +150,24 @@
 				<h2>about me</h2>
 			</div>
 			<div class="container">
-				<div class="about-content">
+				<div class="about-content"> 
 					<div class="row">
 						<div class="col-sm-6">
 							<div class="single-about-txt">
 								<h3>
 									I am Naga Durga DhanaLakshmi Nallaka, a Data Enthusiast and Founder of <i>Talent Unseen</i>
 								</h3>
-								<p>
-									I’m a passionate student and aspiring data scientist with a diverse background in data analysis, software engineering, and research. Currently interning as a Data Analyst, I am developing my skills in extracting meaningful insights from data. My previous experiences include an internship as a Machine Learning Intern and a role as a Research Assistant along with my previous experience as Software Engineer, which helped strengthen my technical abilities and analytical approach. Alongside my technical journey, I founded Talent Unseen, a blog dedicated to sharing stories of inspiring startup founders and highlighting often-overlooked talents in the industry. As I continue to grow my expertise in data science, I’m excited to combine my analytical skills and love for storytelling to create meaningful, data-driven impact.
-								</p>
+								<p>I am a passionate Data Engineer with a strong focus on building scalable and reliable data solutions.
+								 I am proficient in programming languages such as Python, SQL, PowerShell, and R.
+								 My key interests include designing and implementing ETL processes, building robust data pipelines, and working with big data technologies.
+                                 "I have been enjoying migrating data from SQL Server to the Microsoft Azure Cloud."</p>							
 							</div>
 						</div>
 						<div class="col-sm-offset-1 col-sm-5">
 							<div class="single-about-img">
-								<img src="assets/images/about/DHANANALLAKA.jpeg" alt="profile_image" background-color="grey">
+								<!-- <img src="assets/images/about/blessed.png" alt="profile_image" background-color="grey"> -->
+<img src="assets/images/about/dhana_profile.jpg" alt="profile_image" class="img-fluid mt-n3">
+
 								<div class="about-list-icon">
 							</div>
 						</div>
@@ -160,17 +195,16 @@
 									<i class="fa fa-circle" aria-hidden="true"></i>
 									<span class="single-timeline-horizontal"></span>
 								</div>
-								<div class="timeline">
+							
 									<div class="timeline-content">
 										<h4 class="title">
 											Illinois Institute of Technology
 										</h4>
 										<h5>Chicago, USA</h5>
 										<p class="description">
-											During my master’s program, I immersed myself in advanced subjects while gaining hands-on experience through two internships, one externship, and a specialized bootcamp. Alongside these pursuits, I founded a blog <i>Talent Unseen</i></p>
-									</div><!--/.timeline-content-->
+                                  During my master’s program, I gained practical experience in cleaning data, building pipelines, and working on practical projects. I also founded the blog Talent Unseen.									</div><!--/.timeline-content-->
 								</div><!--/.timeline-->
-							</div>
+							
 						</div>
 						<div class="col-sm-8">
 						</div>
@@ -178,13 +212,13 @@
 							<div class="single-horizontal-timeline">
 								<div class="experience-time">
 									<h2>2017 - 2021</h2>
-									<h3>bachelor <span>of </span> Computer Science</h3>
+									<h3>Bachelor <span>of </span> Technology in CS</h3>
 								</div><!--/.experience-time-->
 								<div class="timeline-horizontal-border">
 									<i class="fa fa-circle" aria-hidden="true"></i>
 									<span class="single-timeline-horizontal"></span>
 								</div>
-								<div class="timeline">
+								
 									<div class="timeline-content">
 										<h4 class="title">
 											KKR and KSR Institute of Technology and Sciences
@@ -194,7 +228,7 @@
 											I hold a Bachelor’s degree in Computer Science and have completed three internships that enhanced my skills in data analysis and software engineering. Additionally, I published a research paper.
 										</p>
 									</div><!--/.timeline-content-->
-								</div><!--/.timeline-->
+								
 							</div>
 						</div>
 					</div>
@@ -215,7 +249,7 @@
 							<div class="col-md-6">
 								<div class="single-skill-content">
 									<div class="barWrapper">
-										<span class="progressText">SQL</span>
+										<span class="progressText">Microsoft Azure</span>
 										<div class="single-progress-txt">
 											<div class="progress ">
 												<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
@@ -248,14 +282,14 @@
 										</div>
 									</div><!-- /.barWrapper -->
 									<div class="barWrapper">
-										<span class="progressText">Data Analysis</span>
+										<span class="progressText">SQL Server</span>
 										<div class="single-progress-txt">
 											<div class="progress ">
 											   <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="10" aria-valuemax="100" style="">
 												    
 											   </div>
 											</div>
-											<h3>70%</h3>	
+											<h3>90%</h3>	
 										</div>
 									</div><!-- /.barWrapper -->
 								</div>
@@ -263,7 +297,7 @@
 							<div class="col-md-6">
 								<div class="single-skill-content">
 									<div class="barWrapper">
-										<span class="progressText">html 5</span>
+										<span class="progressText">SSIS</span>
 										<div class="single-progress-txt">
 											<div class="progress ">
 												<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
@@ -274,7 +308,7 @@
 										</div>
 									</div><!-- /.barWrapper -->
 									<div class="barWrapper">
-										<span class="progressText">css 3 animation</span>
+										<span class="progressText">Powershell</span>
 										<div class="single-progress-txt">
 											<div class="progress ">
 											   <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="10" aria-valuemax="100" style="">
@@ -285,7 +319,7 @@
 										</div>
 									</div><!-- /.barWrapper -->
 									<div class="barWrapper">
-										<span class="progressText">communication</span>
+										<span class="progressText">Snowflake</span>
 										<div class="single-progress-txt">
 											<div class="progress ">
 											   <div class="progress-bar" role="progressbar" aria-valuenow="97" aria-valuemin="10" aria-valuemax="100" style="">
@@ -296,14 +330,14 @@
 										</div>
 									</div><!-- /.barWrapper -->
 									<div class="barWrapper">
-										<span class="progressText"> Machine Learning Models</span>
+										<span class="progressText"> IBM DataStage</span>
 										<div class="single-progress-txt">
 											<div class="progress ">
 											   <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="10" aria-valuemax="100" style="">
 												    
 											   </div>
 											</div>
-											<h3>70%</h3>	
+											<h3>90%</h3>	
 										</div>
 									</div><!-- /.barWrapper -->
 								</div>
@@ -315,307 +349,85 @@
 		</section><!--/.skills-->
 		<!--skills end -->
 
-		<!--experience start -->
-		<section id="experience" class="experience">
-			<div class="section-heading text-center">
-				<h2>experience</h2>
+	
+<section id="experience" class="experience">
+	<div class="section-heading text-center">
+				<h2>Work Experience</h2>
 			</div>
-			<div class="container">
-				<div class="experience-content">
-						<div class="main-timeline">
-							<ul>
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-5">
-												<div class="experience-time text-right">
-													<h2>Sep 2024 - Present</h2>
-													<h3>Analyst Intern</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5">
-												<div class="timeline">
-													<div class="timeline-content">
-														<h4 class="title">
-															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-															Cook County Sheriff's Office
-														</h4>
-														<h5>Chicago, USA</h5>
-														<p class="description">
-															Analysis and Preparation of data for Sheriff Policies and a machine learning model for the smooth functioning of sheriff policies. 
-														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
+</section>	<!-- ---Experience -->
+	<ul class="timeline">
+  <li>
+    <div class="timeline-content">
+      <span class="timeline-date">Apr 2025 - Present</span>
+      <h3 class="role">Backend Developer</h3>
+      <h4 class="company">Cook County Sheriff's Office</h4>
+      <p>Skillset Obtained: ETL Pipelines, SSIS, SSRS, SQL Server, API, Powershell Scripting, Microsoft Azure, Azure Data Factory</p>
+    </div>
+  </li>
+  <li>
+    <div class="timeline-content">
+      <span class="timeline-date">Jan 2025 - Apr 2025</span>
+      <h3 class="role">Data Engineer</h3>
+      <h4 class="company">YourPassion1st</h4>
+      <p>Skillset Obtained: Python, PySpark, PowerBI, Apache Kafka, DeltaLake </p>
+    </div>
+  </li>
+    <li>
+    <div class="timeline-content">
+      <span class="timeline-date">Sep 2024 - Dec 2024</span>
+      <h3 class="role">Data Engineer Intern</h3>
+      <h4 class="company">Cook County Sheriff's Office</h4>
+      <p>Skillset Obtained: Sheriff Policies, Compliance, Audits, Security tools, Tableau, Azure, Data Migration, CJIS, NIST Frameworks</p>
+    </div>
+  </li>
+   <li>
+    <div class="timeline-content">
+      <span class="timeline-date">Jan 2024 - Aug 2024</span>
+      <h3 class="role">Research Assistant</h3>
+      <h4 class="company">Illinois Institute of Technology</h4>
+      <p>Skillset Obtained: SQL, Python, DeltaLake, Zotero, Research Papers, Databricks, Data Cleaning, Data Analysis </p>
+    </div>
+  </li>
+  <li>
+    <div class="timeline-content">
+      <span class="timeline-date">May 2024 - Aug 2024</span>
+      <h3 class="role">Data Engineer Intern</h3>
+      <h4 class="company">Onebit Inc</h4>
+      <p>Skillset Obtained: SQL, Python, Pyspark, Azure Databricks, Azure DataFactory, Data Migration </p>
+    </div>
+  </li>
+    <li>
+    <div class="timeline-content">
+      <span class="timeline-date">Mar 2021 - Nov 2022</span>
+      <h3 class="role">Software Engineer</h3>
+      <h4 class="company">DXC Technology</h4>
+      <p>Skillset Obtained: FDM, IBM DataStage, Scheduling Jobs, Automating Job Scheduling, Oracle, PL/SQL, WinSCP, ETL Pipelines</p>
+    </div>
+  </li>
+</ul>
+</section>
 
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-offset-1 col-md-5 experience-time-responsive">
-												<div class="experience-time">
-													<h2>
-														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-														May 2024 - Aug 2024
-													</h2>
-													<h3>Machine Learning Intern</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-5">
-												<div class="timeline">
-													<div class="timeline-content text-right">
-														<h4 class="title">
-															Onebit Inc
-														</h4>
-														<h5>Chicago, USA</h5>
-														<p class="description">
-															Built and deployed machine learning models to analyze financial data for small businesses, driving an 85% increase in actionable insights. 
-															<!-- Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.  -->
-														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5 experience-time-main">
-												<div class="experience-time">
-													<h2>
-														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-														May 2024 - Aug 2024
-													</h2>
-													<h3>Machine Learning Intern</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
+<section id="profile" class="blog-section">
+  <div class="section-heading text-center">
+    <h2>My Featured Blogs</h2>
+  </div>
+  <div class="blog-container">
+    <div class="blog-card">
+      <img src="assets/images/about/first_img.jpg" alt="Blog 1">
+	  <h3></h3><a href="https://talentunseen.com/andrewgunderman/" target="_blank">Andrew Gunderman</a></h3>
+      <!-- <a href="https://talentunseen.com/andrewgunderman/">Andrew Gunderman</a> -->
+      <p>Remarkable journey of Andrew Gunderman</p>
+    </div>
+    <div class="blog-card">
+      <img src="assets/images/about/second.jpg" alt="Blog 2">
+      <h3><a href="https://talentunseen.com/hollypascal/" target="_blank" >Holly Pascal </a></h3>
+      <p>Inspiring Journey of Holly Pascal</p>
+    </div>
+  
+  </div>
+</section>
 
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-5">
-												<div class="experience-time text-right">
-													<h2>Jan 2024 - Aug 2024</h2>
-													<h3>Research Assistant</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5">
-												<div class="timeline">
-													<div class="timeline-content">
-														<h4 class="title">
-															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-															Illinois Institute of Technology
-														</h4>
-														<h5>Chicago, USA</h5>
-														<p class="description">
-															Integrated G protein activation extents as an intermediate step in the chemistry laboratory, resulting in the improved accuracy of 80% for the developed model. 
-															<!-- Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.  -->
-														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
-
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-offset-1 col-md-5 experience-time-responsive">
-												<div class="experience-time">
-													<h2>
-														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-														Mar 2021 - Nov 2022
-													</h2>
-													<h3>Software Engineer</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-5">
-												<div class="timeline">
-													<div class="timeline-content text-right">
-														<h4 class="title">
-															DXC Technology
-														</h4>
-														<h5>India</h5>
-														<p class="description">
-															Streamlined the extraction, transforming and loading(ETL) process for financial data, ensuring seamless data flow and reducing exceptions by 25% leading to improved data accuracy.  
-															<!-- Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.  -->
-														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5 experience-time-main">
-												<div class="experience-time">
-													<h2>
-														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-														Mar 2021 - Nov 2022
-													</h2>
-													<h3>Software Engineer</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
-
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-5">
-												<div class="experience-time text-right">
-													<h2>Jun 2020 - Oct 2020</h2>
-													<h3>Quality Assurance Intern</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5">
-												<div class="timeline">
-													<div class="timeline-content">
-														<h4 class="title">
-															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-															Olcademy
-														</h4>
-														<h5>India</h5>
-														<p class="description">
-															Analyzed test cases and end-user requirements, raising critical bugs and ensuring a 40% increase in the website stability,contributing to an enhanced user experience for the startup’s platform. 
-															<!-- Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.  -->
-														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>	
-							</ul>
-						</div><!--.main-timeline-->
-					</div><!--.experience-content-->
-			</div>
-
-		</section><!--/.experience-->
-		<!--experience end -->
-
-
-<!-- Blog Section Start  -->
-			<div class="portfolio-details">
-				<div class="section-heading text-center">
-					<h2>PUBLISHED BLOGS</h2>
-				</div>
-				<div id="profile">
-					<div class="blog-container">
-						<div class="blog-post">
-							<a href="https://dhananallaka.wordpress.com/2024/07/03/talent-unseen-kaya-jones-and-mosaic/" target="_blank" class="blog-title">COMPANY: Mosaic</a>
-							<div class="blog-description">Founder: Kaya Jones</div>
-						</div>
 				
-						<div class="blog-post">
-							<a href="https://dhananallaka.wordpress.com/2024/07/24/talent-unseen-with-jiri-zeman/" target="_blank" class="blog-title">COMPANY: Aquager Technologies Incorporated</a>
-							<div class="blog-description">Founder: Jiri Zeman</div>
-						</div>
-				
-						<div class="blog-post">
-							<a href="https://dhananallaka.wordpress.com/2024/07/29/talent-unseen-with-uwadukunze-ivan/" target="_blank" class="blog-title">COMPANY: StellarServe Solutions</a>
-							<div class="blog-description">Founder: Uwadukunze Ivan</div>
-						</div>
-					</div>
-				
-					<div class="blog-container">
-						<div class="blog-post">
-							<a href="https://dhananallaka.wordpress.com/2024/08/09/talent-unseen-with-momcilo-gavrilov/" target="_blank" class="blog-title">COMPANY: Sharp Diagnostics</a>
-							<div class="blog-description">Founder: Momcilo Gavrilov</div>
-						</div>
-				
-						<div class="blog-post">
-							<a href="https://dhananallaka.wordpress.com/2024/08/16/talent-unseen-nikhilesh-tayal/" target="_blank" class="blog-title">COMPANY: AI ML etc.</a>
-							<div class="blog-description">Founder: Nikhilesh Tayal</div>
-						</div>
-				
-						<div class="blog-post">
-							<a href="https://dhananallaka.wordpress.com/2024/08/25/talent-unseen-varun-anand/" tagret="_blank" class="blog-title">COMPANY: EduHubSpot</a>
-							<div class="blog-description">Founder: Varun Anand</div>
-						</div>
-					</div>
-				</div>
-				
-				<style>
-					#blog-section {
-    padding: 15px;
-    text-align: center;
-}
-
-h2 {
-    color: #333;
-    margin-bottom: 20px;
-    font-size: 1.8em;
-}
-
-.blog-container {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto; /* Center align the container */
-    max-width: 90%; /* Reduce width so it's not full screen */
-    gap: 15px; /* Adds space between the blog items */
-}
-
-.blog-post {
-    flex: 1;
-    height: 100px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 10px;
-    background-color: #e6c1f9; /* Light pink */
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    margin: 10px 0; /* Adds vertical space between rows */
-}
-
-.blog-post:hover {
-    transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(156, 39, 176, 0.3); /* Purple shadow */
-    background-color: #eca2f9; /* Light purple on hover */
-}
-
-.blog-title {
-    font-size: 1.1em;
-    color: #b636ff; /* Pink color */
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.blog-description {
-    margin-top: 8px;
-    font-size: 0.9em;
-    color: #333;
-}
-
-
-/* Mobile styles */
-@media (max-width: 768px) {
-    .blog-post {
-        flex: 1 1 calc(50% - 10px); /* Two columns */
-    }
-}
-
-@media (max-width: 480px) {
-    .blog-post {
-        flex: 1 1 80%; /* One column */
-    }
-
-    .blog-content {
-        padding: 10px;
-    }
-
-    .blog-title {
-        font-size: 0.7rem;
-    }
-
-    .blog-summary {
-        font-size: 0.7rem;
-    }
-
-    .read-more {
-        font-size: 0.7rem;
-    }
-}
-
-				</style>
-<!-- Blog Section End  -->
 
 <!--contact start -->
 		<section id="contact" class="contact">
@@ -670,8 +482,8 @@ h2 {
 							<div class="single-contact-box">
 								<div class="contact-adress">
 									<div class="contact-add-head">
-										<h3>Dhana Nallaka</h3>
-										<p>Data Scientist</p>
+										<h3>Naga Durga Dhanalakshmi Nallaka</h3>
+										<p>Data Engineer</p>
 									</div>
 									<div class="contact-add-info">
 										<div class="single-contact-add-info">
@@ -680,8 +492,15 @@ h2 {
 											<hr>
 											<!-- <h3>Linkedin</h3> -->
 											<a href="https://www.linkedin.com/in/nnddhanalakshmi/" target="_blank">
-												<i class="fa fa-linkedin" id="linkedin-icon"></i>
+												<i class="fa fa-linkedin fa-lg" id="linkedin-icon"></i>
 											  </a>
+											
+											<a href="https://github.com/dhana-nallaka" target="_blank">
+                                                 <i class="fa fa-github fa-lg" id="github-icon"></i>
+                                            </a>
+											<a href="https://talentunseen.com/" target="_blank">
+                                              <i class="fa fa-pencil-square fa-lg"></i>
+                                            </a>
 											<!-- <i class="fa fa-linkedin" id="linkedin-icon"><a href="https://www.linkedin.com/in/nnddhanalakshmi/" target="_blank"></a></i> -->
 										</div>
 									</div>
